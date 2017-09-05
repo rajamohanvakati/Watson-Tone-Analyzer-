@@ -1,0 +1,76 @@
+<apex:page standardController="Case" extensions="IBMWatsonToneAnakyzer" showHeader="false"  standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <title>Image Recognization with Watson </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <apex:slds />
+            
+        </head>
+        <body>
+            
+            <div class="slds-scope">
+                <div class="demo-only" style="padding: 0.5rem; background: rgb(51, 135, 133);">
+                    <div class="slds-text-color_inverse-weak slds-text-heading_large slds-text-align_center"> Case Tone Analyzer </div>
+                </div>
+            </div>
+            <div class="slds-scope">
+                <div class="slds-grid">
+                    <div class="slds-col">
+                        <div class="slds-page-header">
+                            <div class="slds-media__body">
+                                <h1 class="slds-page-header__title slds-truncate slds-align-middle">Emotion</h1>
+                                <p class="slds-text-body_small slds-line-height_reset">
+                                    &lt; .5 = not likely present <br/> &gt; .5 = likely present <br/> &gt; .75 = very likely present <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-page-header">
+                            <div class="slds-media__body">
+                                <h1 class="slds-page-header__title slds-truncate slds-align-middle">Language Style</h1>
+                                <p class="slds-text-body_small slds-line-height_reset">
+                                    &lt; .5 = not likely present <br/> &gt; .5 = likely present <br/> &gt; .75 = very likely present <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-page-header">
+                            <div class="slds-media__body">
+                                <h1 class="slds-page-header__title slds-truncate slds-align-middle">Social Tendencies</h1>
+                                <p class="slds-text-body_small slds-line-height_reset">
+                                    &lt; .5 = not likely present <br/> &gt; .5 = likely present <br/> &gt; .75 = very likely present <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-scope">
+                <div class="slds-grid">
+                    
+                    <apex:repeat value="{!tones.document_tone.tone_categories}" var="cls">
+                        <div class="slds-col">
+                            <apex:repeat value="{!cls.tones}" var="cls1">
+                                <div class="slds-page-header color-background-error-dark">
+                                    <div class="slds-media__body">
+                                        <p class="slds-text-body_small slds-line-height_reset">{!cls1.tone_name}</p>
+                                        <p class="slds-text-body_small slds-line-height_reset">
+                                            {!cls1.score}  
+                                        </p>
+                                    </div>
+                                </div>
+                            </apex:repeat>
+                        </div>
+                        
+                    </apex:repeat>
+                    
+                </div>
+            </div>
+        </body>
+    </html>
+    
+</apex:page>

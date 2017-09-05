@@ -1,0 +1,17 @@
+{
+    "projectName": "IBMWatsonToneAnalyzer",
+    "username": "rajamohanvakati@forescout.com",
+    "id": "45c04e70-91f7-11e7-93e3-691104653536",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://trailte-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\rvakati\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

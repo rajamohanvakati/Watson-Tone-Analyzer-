@@ -1,0 +1,44 @@
+{
+    "IBMWatsonToneAnalyzer.page": {
+        "createdById": "0056A0000015FJFQA2",
+        "createdByName": "rajamohan vakati",
+        "createdDate": "2017-08-06T01:11:35.000Z",
+        "fileName": "unpackaged/pages/IBMWatsonToneAnalyzer.page",
+        "fullName": "IBMWatsonToneAnalyzer",
+        "id": "0666A0000026Du3QAE",
+        "lastModifiedById": "0056A0000015FJFQA2",
+        "lastModifiedByName": "rajamohan vakati",
+        "lastModifiedDate": "2017-08-24T06:33:27.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexPage",
+        "mmState": "clean"
+    },
+    "Bluemix_Tone_Analyser.namedCredential": {
+        "createdById": "0056A0000015FJFQA2",
+        "createdByName": "rajamohan vakati",
+        "createdDate": "2017-08-06T04:39:15.000Z",
+        "fileName": "unpackaged/namedCredentials/Bluemix_Tone_Analyser.namedCredential",
+        "fullName": "Bluemix_Tone_Analyser",
+        "id": "0XA6A000000CanAWAS",
+        "lastModifiedById": "0056A0000015FJFQA2",
+        "lastModifiedByName": "rajamohan vakati",
+        "lastModifiedDate": "2017-08-23T23:36:52.000Z",
+        "manageableState": "unmanaged",
+        "type": "NamedCredential",
+        "mmState": "clean"
+    },
+    "IBMWatsonToneAnakyzer.cls": {
+        "createdById": "0056A0000015FJFQA2",
+        "createdByName": "rajamohan vakati",
+        "createdDate": "2017-08-06T01:10:19.000Z",
+        "fileName": "unpackaged/classes/IBMWatsonToneAnakyzer.cls",
+        "fullName": "IBMWatsonToneAnakyzer",
+        "id": "01p6A0000068OX1QAM",
+        "lastModifiedById": "0056A0000015FJFQA2",
+        "lastModifiedByName": "rajamohan vakati",
+        "lastModifiedDate": "2017-08-27T04:05:23.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    }
+}
